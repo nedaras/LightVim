@@ -12,7 +12,7 @@ function M.setup(opts)
 
   LazyVim.try(function()
     if type(M.colorscheme) == "function" then
-      M.opts.colorscheme()
+      M.colorscheme()
     else
       vim.cmd.colorscheme(M.colorscheme)
     end
